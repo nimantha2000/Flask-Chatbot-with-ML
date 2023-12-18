@@ -1,5 +1,6 @@
 Flask
 torch
+flask-limiter
 numpy
 requests
 nltk
