@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CEB | Ceylon Electricity Board - Internel</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="https://i.pinimg.com/originals/19/d9/4e/19d94e9aa087791cd1ef45405ffceb23.png"
+                            alt="image" height="60" weight = "60">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">CEB Digital Assistance | Internel</h4>
+                        <p class="chatbox__description--header">Hi. How can I help you?</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <!-- Messages will be displayed here -->
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Write a message...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root | tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+
+</html>
