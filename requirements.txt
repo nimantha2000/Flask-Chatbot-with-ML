@@ -1,4 +1,6 @@
 Flask
+pandas
+python-Levenshtein
 torch
 flask-limiter
 numpy
